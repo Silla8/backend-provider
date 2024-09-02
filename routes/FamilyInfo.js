@@ -1,5 +1,5 @@
 const express = require("express");
-const familyInfoControllers = require("../controllers/familyInfo");
+const familyInfoControllers = require("../controllers/FamilyInfo");
 const authorize = require("../middlewares/Authorize");
 const validate = require('../middlewares/Validate');
 
