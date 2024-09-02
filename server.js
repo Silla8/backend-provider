@@ -17,7 +17,6 @@ app.use(cors());
 app.use(express.json({ verify: verify }));
 app.use(errorHandlerJSON);
 
-const PORT = process.env.PORT | 3002 ;
 
 app.use("/api/personal_info", personalInfoRoutes);
 app.use("/api/workplace_info", workplaceInfoRoutes);
@@ -26,6 +25,6 @@ app.use("/api/financial_info", financialInfoRoutes);
 app.use("/api/family_info", familyInfoRoutes);
 app.use("/api/education_info", educationInfoRoutes);
 
-app.listen(PORT, () => {
-  console.log(`Server is listening on port ${PORT}`);
+app.listen(process.env.PORT || 3002, () => {
+  console.log(`Server is listening on port ${3002}`);
 });
