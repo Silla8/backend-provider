@@ -1,5 +1,5 @@
 const express = require("express");
-const personalInfoControllers = require("../controllers/personalInfo");
+const personalInfoControllers = require("../controllers/PersonalInfo");
 const authorize = require("../middlewares/Authorize");
 const validate = require("../middlewares/Validate");
 
