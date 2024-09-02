@@ -7,8 +7,8 @@ const personalInterestRoutes = require("./routes/PersonalInterest");
 const financialInfoRoutes = require("./routes/FinancialInfo");
 const familyInfoRoutes = require("./routes/FamilyInfo");
 const educationInfoRoutes = require("./routes/EducationInfo");
-const verify = require('./middlewares/verifyJSON');
-const errorHandlerJSON = require('./middlewares/errorHandler');
+const verify = require('./middlewares/VerifyJSON');
+const errorHandlerJSON = require('./middlewares/ErrorHandler');
 
 dotenv.config();
 const app = express();
